@@ -1,4 +1,4 @@
-
+import tumblrClient from '../util/configtumblr'
 // videos section action creators/constants
 const RECEIVE_MUSIC_VIDEOS = 'RECEIVE_MUSIC_VIDEOS'
 const receiveMusicVideos = (videos) => ({
@@ -70,11 +70,25 @@ const receiveComDesigns = (designs) => ({
 
 
 // action creator
-const fetchVideos = (videoType) => {
+const fetchPost = (options) => {
+
 	return (dispatch) => {
-		
+		const {postType, tags, requestType} = options 
+		// contentType should be a string like 'design/commercial' or 'video/musicvideos'
+
+		const payload = tumblrClient.blogPosts('vvvisualvandals', {type: postType, tag: tags }).then(resp => {
+			      console.log('this is the tumblr response', resp)
+			})
+
+		switch(contentType) {
+			case 'video/musicvideos': 
+				return receiveMusicVideos(payload)
+			case 'video/recap'
+				return receiveRecapVideos(payload)
+		}
 	}
 }
+
 
 
 

@@ -8,7 +8,7 @@ const tumblrClient = tumblr.createClient({
 });
 
 /*
-tag must be array 
+tag must be array if multiple tags
 tumblrClient.blogPosts('vvvisualvandals', {type: 'photo', tag: ['convert', 'love', 'chicken'] }).then(resp => {
       console.log('this is the tumblr response', resp)
 })
