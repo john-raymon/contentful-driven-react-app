@@ -1,6 +1,4 @@
-export default (state = {} , action) => {
-	switch (action.type) {
-		default: 
-			return state;
-	}
-}
+import videos from './videos'
+import { combineReducers } from 'redux'
+
+export default combineReducers({ videos })
