@@ -27,40 +27,30 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
       > Appropiate Tags
       ```
       musicvideos
-      or
       musicvideo
       ```
     - Recap
       > Appropiate Tags
       ```
       recap
-      or
       recapvideos
-      or
       recapvideo
       ```
     - Documentary
       > Appropiate Tags
       ```
       documentaryvideos
-      or
       documentaryvideo
-      or
       docvideos
-      or
       docvideo
-      or
       doc
       ```
     - Projects
       > Appropiate Tags
       ```
       projectsvideos
-      or
       projectvideos
-      or
       projectvideo 
-      or
       projectsvideo
       ```
   - Photo
