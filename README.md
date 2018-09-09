@@ -55,7 +55,57 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
       ```
   - Photo
     - > visual/photo is made up of Tumblr photo type post
+    - Fashion 
+      > Appropiate Tags
+       ```
+       fashionphoto
+       fashionphotos
+       ```
+    - Commercial 
+      > Appropiate Tags
+      ```
+      commercialphotos
+      commercialphoto
+      ```
+    - Projects 
+      > Appropiate Tags
+      ```
+      projectsphotos 
+      projectphotos 
+      projectsphoto 
+      projectphoto
+      ```
+    - Shows 
+      > Appropriate Tags
+      ```
+      showsphotos
+      showphotos
+      showsphoto
+      showphoto
+      ```
+    - Portrait 
+      > Appropiate Tags
+      ```
+      portraitphotos
+      portraitphoto
+      ```
   - Design
-    - > visual/design is made up of Tumblr photo type post
-
+      - Album Artwork 
+        > Appropriate Tags
+        ```
+        albumartworkdesign
+        albumartworkdesigns
+        ```
+      - Brands 
+        > Appropriate Tags
+        ```
+        brandsdesign
+        branddesigns
+        ```
+      - Commercial
+        > Appropiate Tags
+        ```
+        commercialdesign
+        commercialdesigns
+        ```
 
