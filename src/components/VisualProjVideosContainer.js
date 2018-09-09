@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import withTumblr from './withTumblr'
 import { fetchPost } from '../actions/index'
 
-class VisualMusicVideosContainer extends Component {
+class VisualProjVideosContainer extends Component {
   componentDidMount() {
     this.props.dispatch(fetchPost(this.props.fetchObject))
   }
@@ -17,6 +17,6 @@ class VisualMusicVideosContainer extends Component {
   }
 }
 const mapStateToProps = (state) => ({
-  videos: state.videos.music_videos
+  videos: state.videos.proj_videos
 })
-export default connect(mapStateToProps)(withTumblr(VisualMusicVideosContainer))
+export default connect(mapStateToProps)(withTumblr(VisualProjVideosContainer))

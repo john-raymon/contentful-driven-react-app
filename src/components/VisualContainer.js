@@ -6,24 +6,19 @@ export default class VisualContainer extends Component {
     return(
       <Fragment>
         <ul>
-          <li>
-            <Link to="/visual/music-videos">
-              <p>Music Videos</p>
+         <li>
+            <Link to="/visual/video">
+              <p>Video</p>
             </Link>
           </li>
           <li>
-            <Link to="/visual/recap">
-              <p>Recap</p>
+            <Link to="/visual/photo">
+              <p>Photo</p>
             </Link>
           </li>
           <li>
-            <Link to="/visual/documentary">
-              <p>Documentary</p>
-            </Link>
-          </li>
-          <li>
-            <Link to="/visual/projects">
-              <p>Projects</p>
+            <Link to="/visual/design">
+              <p>Design</p>
             </Link>
           </li>
         </ul>

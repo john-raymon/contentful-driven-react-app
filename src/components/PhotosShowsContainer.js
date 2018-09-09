@@ -4,19 +4,19 @@ import { connect } from 'react-redux'
 import withTumblr from './withTumblr'
 import { fetchPost } from '../actions/index'
 
-class VisualMusicVideosContainer extends Component {
+class PhotosShowsContainer extends Component {
   componentDidMount() {
     this.props.dispatch(fetchPost(this.props.fetchObject))
   }
   render() {
     return(
       <Fragment>
-        {JSON.stringify(this.props.videos)}
+        {JSON.stringify(this.props.photos)}
       </Fragment>
     )
   }
 }
 const mapStateToProps = (state) => ({
-  videos: state.videos.music_videos
+  photos: state.photos
 })
-export default connect(mapStateToProps)(withTumblr(VisualMusicVideosContainer))
+export default connect(mapStateToProps)(withTumblr(PhotosShowsContainer))
