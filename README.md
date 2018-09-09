@@ -24,20 +24,20 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
   - Video
     > Remember for a post with an appropiate tag to appear any of the video sections it must be a video post type on Tumblr
     - Music Videos 
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       musicvideos
       musicvideo
       ```
     - Recap
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       recap
       recapvideos
       recapvideo
       ```
     - Documentary
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       documentaryvideos
       documentaryvideo
@@ -46,7 +46,7 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
       doc
       ```
     - Projects
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       projectsvideos
       projectvideos
@@ -56,19 +56,19 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
   - Photo
     - > visual/photo is made up of Tumblr photo type post
     - Fashion 
-      > Appropiate Tags
+      > Appropriate Tags
        ```
        fashionphoto
        fashionphotos
        ```
     - Commercial 
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       commercialphotos
       commercialphoto
       ```
     - Projects 
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       projectsphotos 
       projectphotos 
@@ -84,7 +84,7 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
       showphoto
       ```
     - Portrait 
-      > Appropiate Tags
+      > Appropriate Tags
       ```
       portraitphotos
       portraitphoto
@@ -103,7 +103,7 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
         branddesigns
         ```
       - Commercial
-        > Appropiate Tags
+        > Appropriate Tags
         ```
         commercialdesign
         commercialdesigns
