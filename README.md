@@ -15,20 +15,54 @@ These two different types of post are what the three Visual subsets comprise of 
   - Design
     - > visual/design is made up of Tumblr photo type post
     
-When a page is rendered, for example the vvvisualvandals.com/visual/design/album-artwork page, the VV platform makes a request to the Tumblr API. It basically asks Tumblr for all the photo type post that are tagged with `albumartworks` on global.vvvisualvandals.com. The same goes for when vvvisualvandals.com/visual/video/musicvideos page is rendered, VV will make a request to Tumblr asking for all video type post that are tagged with `musicvideos`. 
+When a page is rendered, for example the vvvisualvandals.com/visual/design/album-artwork page, the VV platform makes a request to the Tumblr API. It basically asks Tumblr for all the photo type post that are tagged with `albumartworks` on global.vvvisualvandals.com. The same goes for when vvvisualvandals.com/visual/video/music-videos page is rendered, VV will make a request to Tumblr asking for all video type post that are tagged with `musicvideos`. 
 > Tags will never have any hyphens (-), or spaces. (Ex: `musicvideos`, `albumartworks`)
 
 By now you may have a clue on how to populate a section of the VV platform. Below are all of the appropiate tags to add to a Tumblr post type to make it populate in a VV section.
 
 - Visual
-  - Video 
+  - Video
+    > Remember for a post with an appropiate tag to appear any of the video sections it must be a video post type on Tumblr
     - Music Videos 
-      > Possible tags
+      > Appropiate Tags
       ```
       musicvideos
+      or
       musicvideo
       ```
-    - > visual/video is made up of Tumblr video type post
+    - Recap
+      > Appropiate Tags
+      ```
+      recap
+      or
+      recapvideos
+      or
+      recapvideo
+      ```
+    - Documentary
+      > Appropiate Tags
+      ```
+      documentaryvideos
+      or
+      documentaryvideo
+      or
+      docvideos
+      or
+      docvideo
+      or
+      doc
+      ```
+    - Projects
+      > Appropiate Tags
+      ```
+      projectsvideos
+      or
+      projectvideos
+      or
+      projectvideo 
+      or
+      projectsvideo
+      ```
   - Photo
     - > visual/photo is made up of Tumblr photo type post
   - Design
