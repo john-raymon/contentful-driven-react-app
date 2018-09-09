@@ -108,4 +108,6 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
         commercialdesign
         commercialdesigns
         ```
+Below is how you will add tags on the Tumblr interface
+![](demo_for_readme.gif)
 
