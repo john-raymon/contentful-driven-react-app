@@ -1,83 +1,7 @@
 import Status from '../constants/Status'
 import {RECEIVE_MUSIC_VIDEOS, RECEIVE_RECAP_VIDEOS, RECEIVE_DOC_VIDEOS, RECEIVE_PROJ_VIDEOS} from '../constants/Actions'
 
-const allIds = (state, action) => {
-  return action.payload.length > 0 ? action.payload.map(post => post.id) : state
-}
-
-const music_videos = (state = {byIds: {}, allIds: [], status: Status.IDLE, error: null}, action) => {
-
-  switch (action.type) {
-    case `${RECEIVE_MUSIC_VIDEOS}_FULFILLED`: 
-      return {
-        ...state,
-        status: Status.FULFILLED,
-        byIds: action.payload.length > 0 ? action.payload.reduce((obj, post) => {
-          obj[post.id] = post;
-          return obj
-        }, {}) : state.byIds,
-        allIds: allIds(state.allIds, action)
-      }
-    default:
-      return state;
-  }
-}
-
-const recap_videos = (state = { byIds: {}, allIds: [], status: Status.IDLE, error: null }, action) => {
-  console.log('recap video payload in reducer', action.payload)
-  switch (action.type) {
-    case `${RECEIVE_RECAP_VIDEOS}_FULFILLED`: 
-      return {
-        ...state,
-        status: Status.FULFILLED,
-        byIds: action.payload.length > 0 ? action.payload.reduce((obj, post) => {
-          obj[post.id] = post;
-          return obj
-        }, {}) : state.byIds,
-        allIds: allIds(state.allIds, action)
-      }
-    default:
-      return state;
-  }
-}
-
-const doc_videos = (state = {byIds: {}, allIds: [], status: Status.IDLE, error: null}, action) => {
-
-  switch (action.type) {
-    case `${RECEIVE_DOC_VIDEOS}_FULFILLED`: 
-      return {
-        ...state,
-        status: Status.FULFILLED,
-        byIds: action.payload.length > 0 ? action.payload.reduce((obj, post) => {
-          obj[post.id] = post;
-          return obj
-        }, {}) : state.byIds,
-        allIds: allIds(state.allIds, action)
-      }
-    default:
-      return state;
-  }
-}
-
-const proj_videos = (state = {byIds: {}, allIds: [], status: Status.IDLE, error: null}, action) => {
-
-  switch (action.type) {
-    case `${RECEIVE_PROJ_VIDEOS}_FULFILLED`: 
-      return {
-        ...state,
-        status: Status.FULFILLED,
-        byIds: action.payload.length > 0 ? action.payload.reduce((obj, post) => {
-          obj[post.id] = post;
-          return obj
-        }, {}) : state.byIds,
-        allIds: allIds(state.allIds, action)
-      }
-    default:
-      return state;
-  }
-}
-
-const videos = (state = {
+const initialState = {
   music_videos: { 
     byIds: {}, 
     allIds: [], 
@@ -98,7 +22,80 @@ const videos = (state = {
     allIds: [], 
     status: Status.IDLE, 
     error: null }
-  }, action) => {
+  };
+
+const allIds = (state, action) => {
+  return action.payload.length > 0 ? action.payload.map(post => post.id) : state
+}
+
+const byIds = (state, action) => {
+  return action.payload.length > 0 ? action.payload.reduce((obj, post) => {
+          obj[post.id] = post;
+          return obj
+        }, {}) : byIds
+}
+
+const music_videos = (state, action) => {
+
+  switch (action.type) {
+    case `${RECEIVE_MUSIC_VIDEOS}_FULFILLED`: 
+      return {
+        ...state,
+        status: Status.FULFILLED,
+        byIds: byIds(state.byIds, action),
+        allIds: allIds(state.allIds, action)
+      }
+    default:
+      return state;
+  }
+}
+
+const recap_videos = (state, action) => {
+  console.log('recap video payload in reducer', action.payload)
+  switch (action.type) {
+    case `${RECEIVE_RECAP_VIDEOS}_FULFILLED`: 
+      return {
+        ...state,
+        status: Status.FULFILLED,
+        byIds: byIds(state.byIds, action),
+        allIds: allIds(state.allIds, action)
+      }
+    default:
+      return state;
+  }
+}
+
+const doc_videos = (state, action) => {
+
+  switch (action.type) {
+    case `${RECEIVE_DOC_VIDEOS}_FULFILLED`: 
+      return {
+        ...state,
+        status: Status.FULFILLED,
+        byIds: byIds(state.byIds, action),
+        allIds: allIds(state.allIds, action)
+      }
+    default:
+      return state;
+  }
+}
+
+const proj_videos = (state, action) => {
+
+  switch (action.type) {
+    case `${RECEIVE_PROJ_VIDEOS}_FULFILLED`: 
+      return {
+        ...state,
+        status: Status.FULFILLED,
+        byIds: byIds(state.byIds, action),
+        allIds: allIds(state.allIds, action)
+      }
+    default:
+      return state;
+  }
+}
+
+const videos = (state = initialState, action) => {
 
   switch (action.type) {
     case `${RECEIVE_MUSIC_VIDEOS}_PENDING`:
