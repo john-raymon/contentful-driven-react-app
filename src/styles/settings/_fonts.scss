@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Echomotors';
+    src: url('./../assets/fonts/echomotors_demo-webfont.eot');
+    src: url('./../assets/fonts/echomotors_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./../assets/fonts/echomotors_demo-webfont.woff2') format('woff2'),
+         url('./../assets/fonts/echomotors_demo-webfont.woff') format('woff'),
+         url('./../assets/fonts/echomotors_demo-webfont.ttf') format('truetype'),
+         url('./../assets/fonts/echomotors_demo-webfont.svg#echomotors_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./../assets/fonts/worksans-regular-webfont.eot');
+  src: url('./../assets/fonts/worksans-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../assets/fonts/worksans-regular-webfont.woff2') format('woff2'),
+    url('./../assets/fonts/worksans-regular-webfont.woff') format('woff'),
+    url('./../assets/fonts/worksans-regular-webfont.ttf') format('truetype'),
+    url('./../assets/fonts/worksans-regular-webfont.svg#work_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$worksans: 'Work Sans', sans-serif;
+.worksans {
+    font-family: $worksans;
+}
+
+$echomotors: 'Echomotors', monospace;
+.echomotors {
+  font-family: $echomotors;
+}
+

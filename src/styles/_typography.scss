@@ -1,0 +1,87 @@
+@import 'settings';
+
+em {
+  font-style: italic;
+}
+
+strong,
+.text-bold {
+  font-weight: bold;
+}
+
+.text-light {
+  font-weight: 100;
+}
+
+.text-xxl {
+  font-size: 6.25rem;
+  line-height: 1.2;
+}
+
+.text-xl {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+}
+
+.text-md {
+  font-size: 1.5625rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+.text-sm {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+.text-xs {
+  font-size: 0.9375rem;
+  line-height: 2rem;
+}
+
+.text-xxs {
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.letter-spacing-sm {
+  letter-spacing: 0.1rem;
+}
+
+.letter-spacing-md {
+  letter-spacing: 0.2rem;
+}
+
+.line-height-lg {
+  line-height: 2.5rem;
+}
+.line-height-md {
+  line-height: 2rem;
+}
+.line-height-sm {
+  line-height: 1.5rem;
+}
+.line-height-xs {
+  line-height: 1rem;
+}
+.line-height-xxs {
+  line-height: 0.5;
+}
+
+// a {
+//   color: color('black');
+//   &:hover,
+//   &:active,
+//   &:focus {
+//     text-decoration: underline;
+//   }
+// }
+

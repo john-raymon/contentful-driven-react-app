@@ -1,0 +1,55 @@
+/*
+Import global settings
+*/
+@import 'settings';
+
+/*
+Manual Resets
+*/
+body, html {
+  @extend .bg-black;
+  @extend .text-white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  outline-color: lightgray;
+}
+
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}
+
+/*
+Dimension classes
+*/
+.container {
+  min-height: calc(100vh - #{$footer-mobile-height});
+}
+
+/*
+Icons
+*/
+
+.HamburgerIcon {
+  
+  &__container {
+    width: spacing(7);
+    height: spacing(7);
+  }
+}
+
+.SocialIcon {
+
+  &__container {
+    width: spacing(6);
+    height: spacing(6);
+  }
+}

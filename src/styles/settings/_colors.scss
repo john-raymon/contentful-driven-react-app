@@ -1,0 +1,52 @@
+$colors: (
+  'transparent': transparent,
+  'translucent-gray': rgba(0, 0, 0, 0.2),
+  'white': #fff,
+  'light-gray': #efefef,
+  'gray': #dadada,
+  'dark-gray': #bcbec0,
+  'charcoal': #363636,
+  'black': #111,
+  'blue-light': #eaedeb,
+  'blue': #d6dbd8,
+  'blue-dark': #7d919e,
+  'pink-light': #fdf5f7,
+  'pink': #f1d6dc,
+  'pink-dark': #af7d7d,
+  'olive-light': #e3e3da,
+  'olive': #bfbf99,
+  'olive-dark': #89885c,
+  'orange-light': #f7cbb9,
+  'orange': #e29372,
+  'orange-dark': #d35933,
+  'sand-light': #eee8e4,
+  'sand': #ceb7a5,
+  'sand-dark': #b79783,
+  'tan-light': #f8f2ec,
+  'tan-dark': #eee8e2,
+  'yellow-light': #fbe7bb,
+  'yellow': #eac168,
+  'yellow-dark': #e2a427
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color};
+  }
+
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+
+  .fill-#{$name} {
+    fill: #{$color};
+  }
+
+  .border-#{$name} {
+    border-color: #{$color};
+  }
+}

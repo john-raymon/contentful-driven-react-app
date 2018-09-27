@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import promiseMiddleware from 'redux-promise-middleware'
 import { createLogger } from 'redux-logger'
-import rootReducer from '../reducers/index'
+import rootReducer from './../state/reducers'
 
 const middlewares = [thunkMiddleware, createLogger(), promiseMiddleware()]
 const configureStore = (persistedState) => { 

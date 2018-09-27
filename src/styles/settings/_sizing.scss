@@ -1,0 +1,82 @@
+/*
+Spacing
+*/
+@function spacing($units) {
+  @return $units * 0.25rem;
+}
+
+$spacer: (
+  '0': spacing(0),
+  's': spacing(2),
+  'm': spacing(4),
+  'l': spacing(8),
+  'xl': spacing(16)
+);
+
+@function spacer($spacing-name) {
+  @return map-get($spacer, $spacing-name);
+}
+
+@each $key, $value in $spacer {
+  .t#{$key} {
+    top: #{$value};
+  }
+  .r#{$key} {
+    right: #{$value};
+  }
+  .b#{$key} {
+    bottom: #{$value};
+  }
+  .l#{$key} {
+    left: #{$value};
+  }
+}
+
+/*
+Border Radius
+*/
+$radius: (
+  '0': spacing(0),
+  'xs': spacing(1),
+  's': spacing(2),
+  'm': spacing(4),
+  'l': spacing(8),
+  'circle': 50%
+);
+
+@function radius($radius-name) {
+  @return map-get($radius, $radius-name);
+}
+
+/* 
+ Border Sizes
+*/
+$width: (
+  'small': spacing(0.25),
+  'medium': spacing(0.5),
+  'large': spacing(1.5),
+  'xlarge': spacing(2),
+);
+
+@each $name, $size in $width {
+  .border-#{$name} {
+    border-width: #{$size};
+  }
+}
+
+
+/*
+Global element shapes
+*/
+
+// $viewport-height: 100vh;
+// $drop-shadow: 0 0 3rem 5px rgba(0, 0, 0, 0.1);
+// $top-bar-height: spacing(18);
+// $top-bar-height-mobile: spacing(15);
+// $button-primary-height: spacing(14);
+// $button-small-height: spacing(10);
+// $alert-height-mobile: spacing(9);
+// $alert-height-desktop: spacing(10);
+// $product-dropdown-height: spacing(90);
+$footer-mobile-height: 18rem;
+$nav-mobile-height: 5.8rem;

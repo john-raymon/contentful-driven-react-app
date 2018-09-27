@@ -1,0 +1,145 @@
+@import 'settings';
+
+a:hover {
+  text-decoration: none;
+}
+.list-style-none {
+  list-style: none;
+}
+
+.border {
+  border: 3px solid color('black');
+}
+
+.border-bottom-active-link {
+  border-bottom: 4px solid color('black');
+}
+
+.min100vh {
+  min-height: 100vh;
+}
+
+.maxh100 {
+  max-height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-cover-center {
+  background-size: cover;
+  background-position: center;
+}
+
+.absolute-cover {
+  @extend .bg-cover-center;
+  @extend .overlay;
+  z-index: -1;
+}
+
+.fixed-cover {
+  @extend .absolute-cover;
+  position: fixed;
+  z-index: z('overlay');
+}
+
+.circle {
+  border-radius: radius('circle');
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.t0 {
+  top: 0;
+}
+
+.r0 {
+  right: 0;
+}
+
+.b0 {
+  bottom: 0;
+}
+
+.l0 {
+  left: 0;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.events-all {
+  pointer-events: all;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.max-width-5 {
+  max-width: 75rem;
+}
+
+.max-width-6 {
+  max-width: 90rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.background-none {
+  background: none;
+}
+
+.pushFromNav {
+  padding-top: $nav-mobile-height;
+}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default class VisualContainer extends Component {
   render() {
     return(
-      <Fragment>
+      <div className="pushFromNav">
         <ul>
          <li>
             <Link to="/visual/video">
@@ -22,7 +22,7 @@ export default class VisualContainer extends Component {
             </Link>
           </li>
         </ul>
-      </Fragment>
+      </div>
     )
   }
 }
