@@ -9,11 +9,11 @@
 These two different types of post are what the three Visual subsets comprise of ...
 - Visual
   - Video 
-    - > visual/video is made up of Tumblr video type post
+    > visual/video is made up of Tumblr video type post
   - Photo
-    - > visual/photo is made up of Tumblr photo type post
+    > visual/photo is made up of Tumblr photo type post
   - Design
-    - > visual/design is made up of Tumblr photo type post
+    > visual/design is made up of Tumblr photo type post
     
 When a page is rendered, for example the vvvisualvandals.com/visual/design/album-artwork page, the VV platform makes a request to the Tumblr API. It basically asks Tumblr for all the photo type post that are tagged with `albumartworks` on global.vvvisualvandals.com. The same goes for when vvvisualvandals.com/visual/video/music-videos page is rendered, VV will make a request to Tumblr asking for all video type post that are tagged with `musicvideos`. 
 > Tags will never have any hyphens (-), or spaces. (Ex: `musicvideos`, `albumartworks`)
@@ -108,4 +108,6 @@ By now you may have a clue on how to populate a section of the VV platform. Belo
         commercialdesign
         commercialdesigns
         ```
+Below is how you will add tags on the Tumblr interface
+![](demo_for_readme.gif)
 
