@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HamburgerIcon from './../../assets/svgs/HamburgerIcon'
 
 const Nav = () => (
-  <nav className="Nav fixed w100 pt3 pb2 px3">
+  <nav className="Nav fixed w100 pt3 pb2 px3 z-nav">
     <div className="w100 flex flex-row items-center justify-between border-bottom border-medium border-white pb1 px2 mx-auto max-width-3">
       <div className="text-decoration-none">
         <Link to="/home">

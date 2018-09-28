@@ -980,17 +980,17 @@ Import global settings
 .border-transparent {
   border-color: transparent; }
 
-.text-translucent-gray {
-  color: rgba(0, 0, 0, 0.2); }
+.text-translucent-black {
+  color: rgba(0, 0, 0, 0.4); }
 
-.bg-translucent-gray {
-  background-color: rgba(0, 0, 0, 0.2); }
+.bg-translucent-black {
+  background-color: rgba(0, 0, 0, 0.4); }
 
-.fill-translucent-gray {
-  fill: rgba(0, 0, 0, 0.2); }
+.fill-translucent-black {
+  fill: rgba(0, 0, 0, 0.4); }
 
-.border-translucent-gray {
-  border-color: rgba(0, 0, 0, 0.2); }
+.border-translucent-black {
+  border-color: rgba(0, 0, 0, 0.4); }
 
 .text-white, body, html {
   color: #fff; }
@@ -1503,17 +1503,17 @@ Icons
 .border-transparent {
   border-color: transparent; }
 
-.text-translucent-gray {
-  color: rgba(0, 0, 0, 0.2); }
+.text-translucent-black {
+  color: rgba(0, 0, 0, 0.4); }
 
-.bg-translucent-gray {
-  background-color: rgba(0, 0, 0, 0.2); }
+.bg-translucent-black {
+  background-color: rgba(0, 0, 0, 0.4); }
 
-.fill-translucent-gray {
-  fill: rgba(0, 0, 0, 0.2); }
+.fill-translucent-black {
+  fill: rgba(0, 0, 0, 0.4); }
 
-.border-translucent-gray {
-  border-color: rgba(0, 0, 0, 0.2); }
+.border-translucent-black {
+  border-color: rgba(0, 0, 0, 0.4); }
 
 .text-white, body, html {
   color: #fff; }
@@ -2045,6 +2045,15 @@ strong,
 .line-height-xxs {
   line-height: 0.5; }
 
+.hero-title-text {
+  font-family: "Echomotors", monospace;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem; }
+
+.hero-description-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem; }
+
 .text-transparent {
   color: transparent; }
 
@@ -2057,17 +2066,17 @@ strong,
 .border-transparent {
   border-color: transparent; }
 
-.text-translucent-gray {
-  color: rgba(0, 0, 0, 0.2); }
+.text-translucent-black {
+  color: rgba(0, 0, 0, 0.4); }
 
-.bg-translucent-gray {
-  background-color: rgba(0, 0, 0, 0.2); }
+.bg-translucent-black {
+  background-color: rgba(0, 0, 0, 0.4); }
 
-.fill-translucent-gray {
-  fill: rgba(0, 0, 0, 0.2); }
+.fill-translucent-black {
+  fill: rgba(0, 0, 0, 0.4); }
 
-.border-translucent-gray {
-  border-color: rgba(0, 0, 0, 0.2); }
+.border-translucent-black {
+  border-color: rgba(0, 0, 0, 0.4); }
 
 .text-white, body, html {
   color: #fff; }

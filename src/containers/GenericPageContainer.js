@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from 'redux'
+import { Redirect } from 'react-router-dom'
 
 import { fetchGenericPage } from './../state/actions/genericPageActions';
 
@@ -16,11 +17,12 @@ class GenericPageContainer extends Component {
   componentDidMount() {
     const {
       actions,
-      location: { pathname }
+      match: { params: { slug } }
     } = this.props;
-    const slug = pathname.replace(/^\//, '');
-
-    actions.fetchGenericPage(slug);
+    const path = slug.replace(/^\//, '');
+    console.log(this.props)
+    actions.fetchGenericPage(path);
+    console.log('mounted')
   }
 
   render() {
@@ -33,7 +35,7 @@ class GenericPageContainer extends Component {
       if (doesSlugExist) {
         return <GenericPageView { ...this.props } />   
       } else {
-        return <p>Not Found</p>
+        return <Redirect to='not-found' />;      
       } 
     }
 

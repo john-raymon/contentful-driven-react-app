@@ -76,6 +76,17 @@ strong,
   line-height: 0.5;
 }
 
+// types
+ .hero-title-text {
+  font-family: $echomotors;
+  font-size: spacing(5);
+  letter-spacing: 0.2rem;
+ }
+
+ .hero-description-text {
+  font-family: $worksans;
+  font-size: spacing(3);
+ }
 // a {
 //   color: color('black');
 //   &:hover,
