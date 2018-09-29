@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import get from './../../util/get';
-import Hero from './../Hero'
+import get from 'util/get'
+import Hero from 'components/Hero'
+import InfoContainer from 'components/InfoBlock'
+import VisualContainer from 'components/VisualBlock'
 
 const BlockSwitch = props => {
   const { block } = props;
@@ -11,9 +13,10 @@ const BlockSwitch = props => {
   switch (type) {
     case 'blockAnnouncementHero':
       return <Hero block={block} />;
-    case 'blockVisualContainer':
-      return 
     case 'blockInfoContainer':
+      return <InfoContainer block={block} />
+    case 'blockVisualContainer':
+      return <VisualContainer block={block} />
     default:
       return null;
   }
