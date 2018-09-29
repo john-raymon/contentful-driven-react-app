@@ -1,53 +1,31 @@
-import React, { Component } from 'react'
-
+import ContainerBase from 'lib/ContainerBase';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
-import { Redirect } from 'react-router-dom'
+import { bindActionCreators } from 'redux';
 
-import { fetchGenericPage } from './../state/actions/genericPageActions';
+import { fetchGenericPage } from 'state/actions/genericPageActions';
 
-import GenericPageView from './../views/GenericPageView';
+import { IDLE } from 'constants/Status';
+import get from 'util/get';
 
-import get from './../util/get';
-import _isEmpty from 'lodash/isEmpty';
+class GenericPageContainer extends ContainerBase {
+  view = import('views/GenericPageView');
 
-import { FULFILLED, IDLE, PENDING, REJECTED } from './../constants/Status';
-
-class GenericPageContainer extends Component {
-  componentDidMount() {
+  model = () => {
     const {
       actions,
-      match: { params: { slug } }
+      match: { path }
     } = this.props;
-    const path = slug.replace(/^\//, '');
-    console.log(this.props)
-    actions.fetchGenericPage(path);
-    console.log('mounted')
-  }
 
-  render() {
-
-    const { genericPageStatus, doesSlugExist } = this.props;
-
-    if (genericPageStatus !== FULFILLED) {
-      return <p>Loading</p>
-    } else {
-      if (doesSlugExist) {
-        return <GenericPageView { ...this.props } />   
-      } else {
-        return <Redirect to='not-found' />;      
-      } 
-    }
-
-  }
+    const slug = path === '/' ? 'home' : path.replace(/^\//, '');
+    console.log('this is the slug', slug)
+    return actions.fetchGenericPage(slug);
+  };
 }
 
 const mapStateToProps = state => {
   return {
     pushOffFromMenu: get(state, 'genericPage.items[0].fields.pushOffFromMenu', true),
     blocks: get(state, 'genericPage.items[0].fields.contentBlocks', []),
-    doesSlugExist: _isEmpty(get(state, 'genericPage.items', [])) ? false : true,
-    genericPageStatus: get(state, 'status.genericPage', IDLE)
   };
 };
 

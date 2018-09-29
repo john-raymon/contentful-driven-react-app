@@ -7,7 +7,7 @@ import Routes from './routes'
 
 import { initializeApplication } from './state/actions/applicationActions';
 
-import get from './util/get'
+import get from 'util/get'
 import { IDLE, FULFILLED } from './constants/Status'
 
 import './styles/app.css';

@@ -14,7 +14,7 @@ export default class Hero extends Component {
     return(
       <Link to={`annoucements/${slug}`}>
         <div 
-        className="flex flex-column justify-center px2 center"
+        className="relative flex flex-column justify-center px2 center"
         style={{
         backgroundImage: `url(${src})`,
         backgroundPosition: 'center',
@@ -23,12 +23,14 @@ export default class Hero extends Component {
         }}>
           <div className="absolute t0 r0 b0 l0 bg-translucent-black">
           </div>
-          <p class="relative hero-title-text text-white">
-            { title }
-          </p>
-          <p class="relative hero-description-text text-white">
-            { description }
-          </p>
+            <div className="max-width-2 mx-auto">
+              <p class="relative hero-title-text text-white">
+                { title }
+              </p>
+              <p class="relative hero-description-text text-white">
+                { description }
+              </p>
+            </div>
         </div>
       </Link>
     )
