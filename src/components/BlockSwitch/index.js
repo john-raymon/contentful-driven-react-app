@@ -11,6 +11,9 @@ const BlockSwitch = props => {
   switch (type) {
     case 'blockAnnouncementHero':
       return <Hero block={block} />;
+    case 'blockVisualContainer':
+      return 
+    case 'blockInfoContainer':
     default:
       return null;
   }
