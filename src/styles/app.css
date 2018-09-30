@@ -981,16 +981,16 @@ Import global settings
   border-color: transparent; }
 
 .text-translucent-black {
-  color: rgba(0, 0, 0, 0.4); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .bg-translucent-black {
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .fill-translucent-black {
-  fill: rgba(0, 0, 0, 0.4); }
+  fill: rgba(0, 0, 0, 0.5); }
 
 .border-translucent-black {
-  border-color: rgba(0, 0, 0, 0.4); }
+  border-color: rgba(0, 0, 0, 0.5); }
 
 .text-white, body, html {
   color: #fff; }
@@ -1003,6 +1003,18 @@ Import global settings
 
 .border-white {
   border-color: #fff; }
+
+.text-black-wash {
+  color: rgba(0, 0, 0, 0.7); }
+
+.bg-black-wash {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.fill-black-wash {
+  fill: rgba(0, 0, 0, 0.7); }
+
+.border-black-wash {
+  border-color: rgba(0, 0, 0, 0.7); }
 
 .text-light-gray {
   color: #efefef; }
@@ -1053,16 +1065,16 @@ Import global settings
   border-color: #363636; }
 
 .text-black {
-  color: #111; }
+  color: black; }
 
 .bg-black, body, html {
-  background-color: #111; }
+  background-color: black; }
 
 .fill-black {
-  fill: #111; }
+  fill: black; }
 
 .border-black {
-  border-color: #111; }
+  border-color: black; }
 
 .text-blue-light {
   color: #eaedeb; }
@@ -1504,16 +1516,16 @@ Icons
   border-color: transparent; }
 
 .text-translucent-black {
-  color: rgba(0, 0, 0, 0.4); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .bg-translucent-black {
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .fill-translucent-black {
-  fill: rgba(0, 0, 0, 0.4); }
+  fill: rgba(0, 0, 0, 0.5); }
 
 .border-translucent-black {
-  border-color: rgba(0, 0, 0, 0.4); }
+  border-color: rgba(0, 0, 0, 0.5); }
 
 .text-white, body, html {
   color: #fff; }
@@ -1526,6 +1538,18 @@ Icons
 
 .border-white {
   border-color: #fff; }
+
+.text-black-wash {
+  color: rgba(0, 0, 0, 0.7); }
+
+.bg-black-wash {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.fill-black-wash {
+  fill: rgba(0, 0, 0, 0.7); }
+
+.border-black-wash {
+  border-color: rgba(0, 0, 0, 0.7); }
 
 .text-light-gray {
   color: #efefef; }
@@ -1576,16 +1600,16 @@ Icons
   border-color: #363636; }
 
 .text-black {
-  color: #111; }
+  color: black; }
 
 .bg-black, body, html {
-  background-color: #111; }
+  background-color: black; }
 
 .fill-black {
-  fill: #111; }
+  fill: black; }
 
 .border-black {
-  border-color: #111; }
+  border-color: black; }
 
 .text-blue-light {
   color: #eaedeb; }
@@ -2067,16 +2091,16 @@ strong,
   border-color: transparent; }
 
 .text-translucent-black {
-  color: rgba(0, 0, 0, 0.4); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .bg-translucent-black {
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .fill-translucent-black {
-  fill: rgba(0, 0, 0, 0.4); }
+  fill: rgba(0, 0, 0, 0.5); }
 
 .border-translucent-black {
-  border-color: rgba(0, 0, 0, 0.4); }
+  border-color: rgba(0, 0, 0, 0.5); }
 
 .text-white, body, html {
   color: #fff; }
@@ -2089,6 +2113,18 @@ strong,
 
 .border-white {
   border-color: #fff; }
+
+.text-black-wash {
+  color: rgba(0, 0, 0, 0.7); }
+
+.bg-black-wash {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.fill-black-wash {
+  fill: rgba(0, 0, 0, 0.7); }
+
+.border-black-wash {
+  border-color: rgba(0, 0, 0, 0.7); }
 
 .text-light-gray {
   color: #efefef; }
@@ -2139,16 +2175,16 @@ strong,
   border-color: #363636; }
 
 .text-black {
-  color: #111; }
+  color: black; }
 
 .bg-black, body, html {
-  background-color: #111; }
+  background-color: black; }
 
 .fill-black {
-  fill: #111; }
+  fill: black; }
 
 .border-black {
-  border-color: #111; }
+  border-color: black; }
 
 .text-blue-light {
   color: #eaedeb; }
@@ -2552,10 +2588,10 @@ a:hover {
   list-style: none; }
 
 .border {
-  border: 3px solid #111; }
+  border: 3px solid black; }
 
 .border-bottom-active-link {
-  border-bottom: 4px solid #111; }
+  border-bottom: 4px solid black; }
 
 .min100vh {
   min-height: 100vh; }
@@ -2684,3 +2720,13 @@ a:hover {
 
 .Footer {
   height: 18rem; }
+
+@media screen and (min-width: 52rem) {
+  .InfoBlock {
+    float: left;
+    width: 50%; } }
+
+@media screen and (min-width: 52rem) {
+  .VisualBlock {
+    float: left;
+    width: 50%; } }

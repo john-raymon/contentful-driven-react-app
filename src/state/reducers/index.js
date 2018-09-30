@@ -1,3 +1,4 @@
 import status from './status'
 import genericPage from './genericPage'
-export default {status, genericPage}
+import contents from './contents'
+export default {status, genericPage, contents}

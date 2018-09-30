@@ -11,7 +11,7 @@ export default class VisualContainer extends Component {
     return(
       <Link to={`info`}>
         <div 
-        className="relative flex flex-column justify-center px2 py4 center"
+        className="VisualBlock relative flex flex-column justify-center px2 py4 center"
         style={{
         backgroundImage: `url(${src})`,
         backgroundPosition: 'center',

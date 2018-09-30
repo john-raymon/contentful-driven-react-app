@@ -4,7 +4,7 @@ import TwitterIcon from './../../assets/svgs/TwitterIcon'
 import InstagramIcon from './../../assets/svgs/InstagramIcon'
 import TumblrIcon from './../../assets/svgs/TumblrIcon'
 const Footer = () => (
-  <div className="Footer bg-black flex flex-column justify-center">
+  <div className="Footer bg-black flex flex-column justify-center w100">
     <ul className="list-reset flex flex-column items-center mb4"> 
       <li className="py1">
         <div className="SocialIcon__container">
