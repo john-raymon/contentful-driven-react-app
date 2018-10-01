@@ -9,8 +9,13 @@ import VisualDetailContainer from 'containers/VisualDetailContainer'
 const Routes = ({ location }) => (
   <Switch location={location}>
     <Route exact path="/" component={GenericPageContainer} />
+
     <Route exact path="/visual/video" component={GenericPageContainer} />
     <Route exact path="/visual/video/music-videos" component={GenericPageContainer} />
+    <Route exact path="/visual/video/recap" component={GenericPageContainer} />
+    <Route exact path="/visual/video/documentary" component={GenericPageContainer} />
+    <Route exact path="/visual/video/projects" component={GenericPageContainer} />
+    
     <Route exact path="/visual/photo" component={GenericPageContainer} />
     <Route exact path="/visual/design" component={GenericPageContainer} />
 

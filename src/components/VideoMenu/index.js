@@ -12,13 +12,19 @@ export default class VideoMenu extends Component {
           </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Recap </p>
+          <Link to="video/recap">
+            <p class="echomotors text-sm text-white"> Recap </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Documentary </p>
+          <Link to="video/documentary">
+            <p class="echomotors text-sm text-white"> Documentary </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Projects </p>
+          <Link to="video/projects">
+            <p class="echomotors text-sm text-white"> Projects </p>
+          </Link>
         </li>      
       </ul>
     )

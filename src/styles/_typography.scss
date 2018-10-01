@@ -85,13 +85,17 @@ strong,
   font-weight:bold;
   
   @media screen and ($large-up) {
-    font-size: spacing(8);
+    font-size: spacing(6);
   }
  }
 
  .hero-description-text {
   font-family: $worksans;
   font-size: spacing(3);
+  
+  @media screen and ($medium-up) {
+    font-size: spacing(4);
+  }
  }
 // a {
 //   color: color('black');
