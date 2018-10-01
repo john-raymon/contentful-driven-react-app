@@ -16,11 +16,11 @@ const AnnouncementHero = ({announcement}) => {
       backgroundImage: `url(${src})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      height: '40vh'        
+      height: '20rem'        
     }}>
       <div class="absolute t0 l0 b0 r0 bg-black-wash">
       </div>
-      <div class="max-width-1 w100 mx-auto">
+      <div class="max-width-1 w100 mx-auto px2">
         <p class="relative echomotors text-md text-white">
           { title }
         </p>
