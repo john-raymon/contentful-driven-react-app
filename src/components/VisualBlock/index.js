@@ -9,7 +9,7 @@ export default class VisualContainer extends Component {
     const coverImage = get(this.props, 'block.fields.elementBackgroundImage', {});
     const { url: src, description: alt } = flattenImage(coverImage);
     return(
-      <Link to={`info`}>
+      <Link to={`visual`}>
         <div 
         className="VisualBlock relative flex flex-column justify-center px2 py4 center"
         style={{

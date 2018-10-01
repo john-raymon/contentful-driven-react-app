@@ -199,7 +199,7 @@ button {
 .inline {
   display: inline; }
 
-.block {
+.block, .MarkdownBlock__markdown img {
   display: block; }
 
 .inline-block {
@@ -401,7 +401,7 @@ button {
 .mr-auto {
   margin-right: auto; }
 
-.mx-auto {
+.mx-auto, .MarkdownBlock__markdown img {
   margin-left: auto;
   margin-right: auto; }
 
@@ -443,7 +443,7 @@ button {
 .pl1 {
   padding-left: .5rem; }
 
-.py1 {
+.py1, .MarkdownBlock__markdown img {
   padding-top: .5rem;
   padding-bottom: .5rem; }
 
@@ -466,7 +466,7 @@ button {
 .pl2 {
   padding-left: 1rem; }
 
-.py2 {
+.py2, .MarkdownBlock__markdown p {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
@@ -1064,7 +1064,7 @@ Import global settings
 .border-charcoal {
   border-color: #363636; }
 
-.text-black {
+.text-black, .MarkdownBlock__markdown a {
   color: black; }
 
 .bg-black, body, html {
@@ -1503,6 +1503,12 @@ Icons
   width: 1.5rem;
   height: 1.5rem; }
 
+/*
+Markdown styling
+*/
+.MarkdownBlock__markdown a {
+  text-decoration: underline; }
+
 .text-transparent {
   color: transparent; }
 
@@ -1599,7 +1605,7 @@ Icons
 .border-charcoal {
   border-color: #363636; }
 
-.text-black {
+.text-black, .MarkdownBlock__markdown a {
   color: black; }
 
 .bg-black, body, html {
@@ -2020,22 +2026,22 @@ strong,
   font-size: 6.25rem;
   line-height: 1.2; }
 
-.text-xl {
+.text-xl, .MarkdownBlock__markdown h1 {
   font-size: 2.5rem;
   line-height: 1.4;
   letter-spacing: 0.2rem; }
 
-.text-lg {
+.text-lg, .MarkdownBlock__markdown h2 {
   font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 0.2rem; }
 
-.text-md {
+.text-md, .MarkdownBlock__markdown h3 {
   font-size: 1.5625rem;
   line-height: 1.4;
   letter-spacing: 0.1rem; }
 
-.text-sm {
+.text-sm, .MarkdownBlock__markdown {
   font-size: 1.125rem;
   line-height: 2rem; }
 
@@ -2054,7 +2060,7 @@ strong,
 .letter-spacing-md {
   letter-spacing: 0.2rem; }
 
-.line-height-lg {
+.line-height-lg, .MarkdownBlock__markdown {
   line-height: 2.5rem; }
 
 .line-height-md {
@@ -2174,7 +2180,7 @@ strong,
 .border-charcoal {
   border-color: #363636; }
 
-.text-black {
+.text-black, .MarkdownBlock__markdown a {
   color: black; }
 
 .bg-black, body, html {
@@ -2599,7 +2605,7 @@ a:hover {
 .maxh100 {
   max-height: 100%; }
 
-.w100 {
+.w100, .MarkdownBlock__markdown, .MarkdownBlock__markdown img {
   width: 100%; }
 
 .h100 {
@@ -2730,3 +2736,6 @@ a:hover {
   .VisualBlock {
     float: left;
     width: 50%; } }
+
+.Nav {
+  background: linear-gradient(to bottom, #000000d9, rgba(255, 0, 0, 0)); }

@@ -36,10 +36,11 @@ class App extends Component {
     if (applicationStatus !== FULFILLED) {
       return ( <p>Loading</p> )
     } else {
+      console.log('from app',this.props)
       return(
         <Fragment>
           <Nav />
-          <main className="container">
+          <main className="flex flex-column container">
             <Routes location={get(this, 'props.location')} /> 
           </main>
           <Footer/>

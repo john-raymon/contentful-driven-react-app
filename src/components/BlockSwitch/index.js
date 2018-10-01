@@ -8,6 +8,13 @@ import VisualContainer from 'components/VisualBlock'
 import GlobalContainer from 'components/GlobalBlock'
 import AnnouncementsGrid from 'components/AnnouncementsGrid'
 import AnnouncementHero from 'components/AnnouncementHero'
+import Markdown from 'components/Markdown'
+import VisualMenu from 'components/VisualMenu'
+import VideoMenu from 'components/VideoMenu'
+import PhotoMenu from 'components/PhotoMenu'
+import DesignMenu from 'components/DesignMenu'
+import VideoGrid from 'components/VideoGrid'
+
 
 const BlockSwitch = props => {
   const { block } = props;
@@ -25,9 +32,27 @@ const BlockSwitch = props => {
       return <GlobalContainer block={block} />
     case 'blockAnnouncementsGrid': 
       return <AnnouncementsGrid block={block} />
-    case 'blockAnnouncementArticleHero': 
-      const announcement = get(props, 'announcement', {})
-      return <AnnouncementHero block={block} announcement={announcement} />
+    case 'blockFixedContent': 
+      const fixedBlockType = get(block, 'fields.contentType', '');
+      switch (fixedBlockType) {
+        case 'Announcement Article Hero':
+          const announcement = get(props, 'announcement', {})
+          return <AnnouncementHero block={block} announcement={announcement} />     
+        case 'Visual Menu':
+          return <VisualMenu />
+        case 'Video Menu':
+          return <VideoMenu />
+        case 'Photo Menu': 
+          return <PhotoMenu />
+        case 'Design Menu':
+          return <DesignMenu />
+        default:
+          return null;
+      }
+    case 'blockMarkdown':
+      return <Markdown block={block} />
+    case 'videoGrid':
+      return <VideoGrid block={block} />
     default:
       return null;
   }

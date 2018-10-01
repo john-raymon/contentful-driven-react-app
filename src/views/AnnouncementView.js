@@ -10,7 +10,7 @@ class AnnouncementView extends Component {
     if (!announcement) return <h1>Announcement not found</h1>;
     const { contentBlocks } = announcement;
     return (
-      <div className="w100">
+      <div className="w100 bg-white">
         {contentBlocks &&
           contentBlocks.map((block, i) => (
             <BlockSwitch

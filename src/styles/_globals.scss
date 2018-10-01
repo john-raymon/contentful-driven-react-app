@@ -53,3 +53,45 @@ Icons
     height: spacing(6);
   }
 }
+
+
+/*
+Markdown styling
+*/
+
+.MarkdownBlock {
+
+  &__markdown {
+    @extend .text-sm;
+    @extend .line-height-lg;
+    @extend .w100;
+    
+    img { 
+      @extend .mx-auto;
+      @extend .py1;
+      @extend .block;
+      @extend .w100;
+    }
+
+    p {
+      @extend .py2;
+    }
+
+    a { 
+      @extend .text-black;
+      text-decoration: underline;
+    }
+
+    h3 {
+      @extend .text-md;
+    }
+
+    h2 {
+      @extend .text-lg;
+    }
+
+    h1 {
+      @extend .text-xl;
+    }
+  }
+}

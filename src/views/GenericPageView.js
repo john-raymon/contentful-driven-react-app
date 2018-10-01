@@ -7,7 +7,7 @@ class GenericPageView extends Component {
   render() {
     const { blocks, actions, pushOffFromMenu } = this.props;
     return (
-      <div className={`GenericPageView${pushOffFromMenu ? ' pushFromNav' : '' }`}>
+      <div className={`GenericPageView flex flex-column flex-grow justify-center${pushOffFromMenu ? ' pushFromNav' : '' }`}>
         <div>
           {blocks &&
             blocks.map((block, i) => (

@@ -4,10 +4,18 @@ import LandingPage from './components/LandingPage'
 import Home from './components/Home'
 import GenericPageContainer from 'containers/GenericPageContainer'
 import AnnouncementContainer from 'containers/AnnouncementContainer'
+import VisualDetailContainer from 'containers/VisualDetailContainer'
 
 const Routes = ({ location }) => (
   <Switch location={location}>
     <Route exact path="/" component={GenericPageContainer} />
+    <Route exact path="/visual/video" component={GenericPageContainer} />
+    <Route exact path="/visual/video/music-videos" component={GenericPageContainer} />
+    <Route exact path="/visual/photo" component={GenericPageContainer} />
+    <Route exact path="/visual/design" component={GenericPageContainer} />
+
+    <Route exact path="/visual/:visualType/:visualHandle" component={VisualDetailContainer} />
+    <Route path="/visual" component={GenericPageContainer} />
     <Route 
       exact 
       path="/announcements/:announcementHandle" 

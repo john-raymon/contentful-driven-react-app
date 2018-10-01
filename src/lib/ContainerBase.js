@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import get from './../util/get';
 
 class ContainerBase extends Component {
@@ -60,9 +60,9 @@ class ContainerBase extends Component {
   render() {
     const { view: View, model } = this.state;
     return (
-      <main>
+      <Fragment>
         {View ? <View model={model} {...this.props} {...this.state} /> : null}
-      </main>
+      </Fragment>
     );
   }
 }

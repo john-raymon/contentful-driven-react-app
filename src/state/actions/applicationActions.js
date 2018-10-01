@@ -2,7 +2,10 @@ import ContentfulClient from 'lib/Contentful';
 import Data from 'lib/Data';
 
 import {
-  fetchContentfulAnnouncements
+  fetchContentfulAnnouncements,
+  fetchContentfulPhotos,
+  fetchContentfulVideos,
+  fetchContentfulDesigns
 } from './contentsActions';
 
 export const INITIALIZE_APPLICATION = 'INITIALIZE_APPLICATION';
@@ -14,7 +17,10 @@ export const initializeApplication = () => dispatch => {
       Data.setRef('contentful', Contentful);
 
       const fetchData = Promise.all([
-        dispatch(fetchContentfulAnnouncements())
+        dispatch(fetchContentfulAnnouncements()),
+        dispatch(fetchContentfulPhotos()),
+        dispatch(fetchContentfulDesigns()),
+        dispatch(fetchContentfulVideos())
       ]);
 
       const timeout = new Promise((resolve, reject) => {
