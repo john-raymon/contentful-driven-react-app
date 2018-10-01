@@ -10,8 +10,8 @@ const VideoDetail = ({visual}) => {
 
   return (
     <div className='VideoDetail mx-auto w100 max-width-3 px2'>
-      <p className="hero-title-text text-white py2">{ title }</p>
-      <video className="h100 w100" controls>
+      <p className="echomotors text-sm bold text-white py2">{ title }</p>
+      <video className="h100 w100" controls autoplay="true">
         <source src={src} type={srcType} />
         Your browser does not support the video tag.
       </video>

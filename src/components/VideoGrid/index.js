@@ -17,7 +17,7 @@ class VideoGrid extends Component {
       )
     } else {
       return (
-        <div className="VideoGrid max-width-4 w100 mx-auto clearfix">
+        <div className="VideoGrid max-width-4 w100 mx-auto clearfix mxn2">
           {
             gridItems.map((video, i) => {
               return (

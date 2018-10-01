@@ -82,7 +82,8 @@ strong,
   font-size: spacing(5);
   word-wrap: break-word;
   letter-spacing: 0.3rem;
-
+  font-weight:bold;
+  
   @media screen and ($large-up) {
     font-size: spacing(8);
   }

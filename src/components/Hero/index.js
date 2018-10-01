@@ -19,7 +19,7 @@ export default class Hero extends Component {
         backgroundImage: `url(${src})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '70vh'        
+        height: '36rem'        
       }}>
           <div className="absolute t0 r0 b0 l0 bg-black-wash">
           </div>

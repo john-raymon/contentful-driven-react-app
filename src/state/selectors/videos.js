@@ -11,11 +11,13 @@ export default createSelector(
       const title = get(video, 'fields.title', '');
       const description = get(video, 'fields.description', '');
       const videoFile = get(video, 'fields.videoFile', {});
+      const thumbnail = get(video, 'fields.thumbnail', {});
       flattenedContents[slug] = {
         slug,
         title,
         description,
-        videoFile
+        videoFile,
+        thumbnail
       }
       return flattenedContents;
     }, {})
