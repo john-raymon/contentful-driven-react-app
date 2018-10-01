@@ -9,6 +9,7 @@ import VideoGridItem from 'components/VideoGridItem'
 class VideoGrid extends Component {
   render() {
     const { block } = this.props;
+    const title = get(block, 'fields.title', '');
     const gridItems = get(block, 'fields.videos', []);
 
     if (gridItems.length === 0) {
@@ -18,6 +19,7 @@ class VideoGrid extends Component {
     } else {
       return (
         <div className="VideoGrid max-width-4 w100 mx-auto clearfix mxn2">
+          <p className="echomotors text-sm text-white bold pl2 py1">{  title }</p>
           {
             gridItems.map((video, i) => {
               return (

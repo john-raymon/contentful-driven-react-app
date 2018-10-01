@@ -2079,7 +2079,7 @@ strong,
   font-family: "Echomotors", monospace;
   font-size: 1.25rem;
   word-wrap: break-word;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   font-weight: bold; }
   @media screen and (min-width: 64rem) {
     .hero-title-text {
