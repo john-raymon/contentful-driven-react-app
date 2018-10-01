@@ -80,7 +80,12 @@ strong,
  .hero-title-text {
   font-family: $echomotors;
   font-size: spacing(5);
-  letter-spacing: 0.2rem;
+  word-wrap: break-word;
+  letter-spacing: 0.3rem;
+
+  @media screen and ($large-up) {
+    font-size: spacing(8);
+  }
  }
 
  .hero-description-text {

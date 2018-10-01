@@ -1005,16 +1005,16 @@ Import global settings
   border-color: #fff; }
 
 .text-black-wash {
-  color: rgba(0, 0, 0, 0.7); }
+  color: rgba(0, 0, 0, 0.8); }
 
 .bg-black-wash {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .fill-black-wash {
-  fill: rgba(0, 0, 0, 0.7); }
+  fill: rgba(0, 0, 0, 0.8); }
 
 .border-black-wash {
-  border-color: rgba(0, 0, 0, 0.7); }
+  border-color: rgba(0, 0, 0, 0.8); }
 
 .text-light-gray {
   color: #efefef; }
@@ -1546,16 +1546,16 @@ Markdown styling
   border-color: #fff; }
 
 .text-black-wash {
-  color: rgba(0, 0, 0, 0.7); }
+  color: rgba(0, 0, 0, 0.8); }
 
 .bg-black-wash {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .fill-black-wash {
-  fill: rgba(0, 0, 0, 0.7); }
+  fill: rgba(0, 0, 0, 0.8); }
 
 .border-black-wash {
-  border-color: rgba(0, 0, 0, 0.7); }
+  border-color: rgba(0, 0, 0, 0.8); }
 
 .text-light-gray {
   color: #efefef; }
@@ -2078,7 +2078,11 @@ strong,
 .hero-title-text {
   font-family: "Echomotors", monospace;
   font-size: 1.25rem;
-  letter-spacing: 0.2rem; }
+  word-wrap: break-word;
+  letter-spacing: 0.3rem; }
+  @media screen and (min-width: 64rem) {
+    .hero-title-text {
+      font-size: 2rem; } }
 
 .hero-description-text {
   font-family: "Work Sans", sans-serif;
@@ -2121,16 +2125,16 @@ strong,
   border-color: #fff; }
 
 .text-black-wash {
-  color: rgba(0, 0, 0, 0.7); }
+  color: rgba(0, 0, 0, 0.8); }
 
 .bg-black-wash {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .fill-black-wash {
-  fill: rgba(0, 0, 0, 0.7); }
+  fill: rgba(0, 0, 0, 0.8); }
 
 .border-black-wash {
-  border-color: rgba(0, 0, 0, 0.7); }
+  border-color: rgba(0, 0, 0, 0.8); }
 
 .text-light-gray {
   color: #efefef; }

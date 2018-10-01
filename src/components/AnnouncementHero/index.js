@@ -11,7 +11,7 @@ const AnnouncementHero = ({announcement}) => {
   const coverImage = get(announcement, 'backgroundImage', {});
   const { url: src, description: alt } = flattenImage(coverImage);
   return ( 
-    <div className="Announcement__hero relative flex flex-column justify-end pb3 px2"
+    <div className="Announcement__hero relative flex flex-column justify-end pb3"
     style={{
       backgroundImage: `url(${src})`,
       backgroundPosition: 'center',
@@ -20,7 +20,7 @@ const AnnouncementHero = ({announcement}) => {
     }}>
       <div class="absolute t0 l0 b0 r0 bg-black-wash">
       </div>
-      <div class="max-width-3 w100 mx-auto">
+      <div class="max-width-1 w100 mx-auto">
         <p class="relative echomotors text-md text-white">
           { title }
         </p>
