@@ -8,7 +8,8 @@ import VisualDetailContainer from 'containers/VisualDetailContainer'
 
 const Routes = ({ location }) => (
   <Switch location={location}>
-    <Route exact path="/" component={GenericPageContainer} />
+    <Route exact path="/" component={LandingPage} />
+    <Route exact path="/home" component={GenericPageContainer} />
 
     <Route exact path="/visual/video" component={GenericPageContainer} />
     <Route exact path="/visual/video/music-videos" component={GenericPageContainer} />
