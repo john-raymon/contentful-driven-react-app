@@ -9,6 +9,7 @@ import GlobalContainer from 'components/GlobalBlock'
 import AnnouncementsGrid from 'components/AnnouncementsGrid'
 import AnnouncementHero from 'components/AnnouncementHero'
 import Markdown from 'components/Markdown'
+import MarkdownTransparent from 'components/MarkdownTransparent'
 import VisualMenu from 'components/VisualMenu'
 import VideoMenu from 'components/VideoMenu'
 import PhotoMenu from 'components/PhotoMenu'
@@ -16,6 +17,8 @@ import DesignMenu from 'components/DesignMenu'
 import VideoGrid from 'components/VideoGrid'
 import PhotoGrid from 'components/PhotoGrid'
 import DesignGrid from 'components/DesignGrid'
+import InfoMenu from 'components/InfoMenu'
+import Clients from 'components/Clients'
 
 const BlockSwitch = props => {
   const { block } = props;
@@ -47,17 +50,23 @@ const BlockSwitch = props => {
           return <PhotoMenu />
         case 'Design Menu':
           return <DesignMenu />
+        case 'Info Menu':
+          return <InfoMenu />
         default:
           return null;
       }
     case 'blockMarkdown':
       return <Markdown block={block} />
+    case 'blockMarkdownTransparent':
+      return <MarkdownTransparent block={block} />
     case 'videoGrid':
       return <VideoGrid block={block} />
     case 'photoGrid':
       return <PhotoGrid block={block} />
     case 'designGrid':
       return <DesignGrid block={block} />
+    case 'blockClients':
+      return <Clients block={block} />
     default:
       return null;
   }

@@ -32,7 +32,8 @@ const Routes = ({ location }) => (
     <Route path="/visual" component={GenericPageContainer} />
 
     <Route path="/info" component={GenericPageContainer} />
-
+    <Route path="/bio" component={GenericPageContainer} />
+    <Route path="/creds" component={GenericPageContainer} />
     <Route 
       exact 
       path="/announcements/:announcementHandle" 
