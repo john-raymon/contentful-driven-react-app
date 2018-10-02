@@ -18,9 +18,11 @@ export default class InfoMenu extends Component {
           </p>
         </Link>
         <img src={arrow} className="py1" style={{width: "10px"}} />
-        <p className="echomotors bold text-sm text-white center">
-          Contact
-        </p>
+        <a href="mailto:info@vvvisualvandals.com">
+          <p className="echomotors bold text-sm text-white center">
+            Contact
+          </p>
+        </a>
       </div>
     )
   }
