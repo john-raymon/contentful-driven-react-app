@@ -1,0 +1,9 @@
+.DesignGrid {
+  &__item {
+    width: 50%;
+
+    @media screen and ($medium-up) {
+      width: 25%;
+    }
+  }
+}

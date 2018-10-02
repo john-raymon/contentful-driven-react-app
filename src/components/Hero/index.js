@@ -24,10 +24,10 @@ export default class Hero extends Component {
           <div className="absolute t0 r0 b0 l0 bg-black-wash">
           </div>
             <div className="max-width-2 w100 mx-auto px3">
-              <p class="relative hero-title-text text-white pb1">
+              <p className="relative hero-title-text text-white pb1">
                 { title }
               </p>
-              <p class="relative hero-description-text text-white">
+              <p className="relative hero-description-text text-white">
                 { description }
               </p>
             </div>

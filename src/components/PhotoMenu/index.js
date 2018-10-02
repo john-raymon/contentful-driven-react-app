@@ -7,19 +7,24 @@ export default class PhotoMenu extends Component {
     return(
       <ul className="list-reset center py3">
         <li>
-          <p class="echomotors text-sm text-white"> Fashion </p>
+          <Link to="photo/editorial">
+            <p class="echomotors text-sm text-white"> Editorial </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Commercial </p>
+          <Link to="photo/projects">
+            <p class="echomotors text-sm text-white"> Projects </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Projects </p>
-        </li>
-        <li>
-          <p class="echomotors text-sm text-white"> Shows </p>
+          <Link to="photo/events">
+            <p class="echomotors text-sm text-white"> Events </p>
+          </Link>
         </li>   
         <li>
-          <p class="echomotors text-sm text-white"> Portraits </p>
+          <Link to="photo/places">
+            <p class="echomotors text-sm text-white"> Places </p>
+          </Link>
         </li>  
       </ul>
     )

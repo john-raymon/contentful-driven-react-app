@@ -17,7 +17,15 @@ const Routes = ({ location }) => (
     <Route exact path="/visual/video/projects" component={GenericPageContainer} />
     
     <Route exact path="/visual/photo" component={GenericPageContainer} />
+    <Route exact path="/visual/photo/editorial" component={GenericPageContainer} />
+    <Route exact path="/visual/photo/projects" component={GenericPageContainer} />
+    <Route exact path="/visual/photo/events" component={GenericPageContainer} />
+    <Route exact path="/visual/photo/places" component={GenericPageContainer} />
+
     <Route exact path="/visual/design" component={GenericPageContainer} />
+    <Route exact path="/visual/design/album-artwork" component={GenericPageContainer} />
+    <Route exact path="/visual/design/brands" component={GenericPageContainer} />
+    <Route exact path="/visual/design/commercial" component={GenericPageContainer} />
 
     <Route exact path="/visual/:visualType/:visualHandle" component={VisualDetailContainer} />
     <Route path="/visual" component={GenericPageContainer} />

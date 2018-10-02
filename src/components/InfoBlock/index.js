@@ -20,7 +20,7 @@ export default class InfoContainer extends Component {
           <div className="absolute t0 r0 b0 l0 bg-translucent-black">
           </div>
             <div className="max-width-2 mx-auto">
-              <p class="relative hero-title-text text-white">
+              <p className="relative hero-title-text text-white">
                 Info
               </p>
             </div>

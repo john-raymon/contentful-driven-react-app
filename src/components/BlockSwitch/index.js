@@ -14,7 +14,8 @@ import VideoMenu from 'components/VideoMenu'
 import PhotoMenu from 'components/PhotoMenu'
 import DesignMenu from 'components/DesignMenu'
 import VideoGrid from 'components/VideoGrid'
-
+import PhotoGrid from 'components/PhotoGrid'
+import DesignGrid from 'components/DesignGrid'
 
 const BlockSwitch = props => {
   const { block } = props;
@@ -53,6 +54,10 @@ const BlockSwitch = props => {
       return <Markdown block={block} />
     case 'videoGrid':
       return <VideoGrid block={block} />
+    case 'photoGrid':
+      return <PhotoGrid block={block} />
+    case 'designGrid':
+      return <DesignGrid block={block} />
     default:
       return null;
   }

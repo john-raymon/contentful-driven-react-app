@@ -7,13 +7,19 @@ export default class DesignMenu extends Component {
     return(
       <ul className="list-reset center py3">
         <li>
-          <p class="echomotors text-sm text-white"> Album Artwork </p>
+          <Link to="design/album-artwork">
+            <p class="echomotors text-sm text-white"> Album Artwork </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Brands </p>
+          <Link to="design/brands">
+            <p class="echomotors text-sm text-white"> Brands </p>
+          </Link>
         </li>
         <li>
-          <p class="echomotors text-sm text-white"> Commerical </p>
+          <Link to="design/commercial">
+            <p class="echomotors text-sm text-white"> Commerical </p>
+          </Link>
         </li>
       </ul>
     )

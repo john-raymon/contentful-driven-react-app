@@ -18,7 +18,7 @@ export default class VideoGridItem extends Component {
               backgroundPosition: 'center',
               backgroundSize: 'cover',
             }}> 
-              <div class="absolute t0 r0 l0 b0 bg-black-wash" />
+              <div className="absolute t0 r0 l0 b0 bg-black-wash" />
               <p className="relative text-white echomotors text-sm">
                 { title }
               </p>
