@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom'; 
 import HamburgerIcon from './../../assets/svgs/HamburgerIcon'
+import logo from 'assets/logo-white.png'
 
 const Nav = () => (
   <nav className="Nav fixed w100 pt2 pb2 px3 z-nav">
-    <div className="w100 flex flex-row items-center justify-between border-bottom border-medium border-white pb1 px1 mx-auto max-width-3">
+    <div className="w100 flex flex-row items-center justify-between border-bottom border-medium border-white px1 mx-auto max-width-3">
       <div className="text-decoration-none">
         <Link to="/home">
-          <p className="echomotors text-white text-md">VVV</p>
+          <div className="Logo__container">
+            <img src={logo} className="w100" />  
+          </div>
         </Link>
       </div>
 

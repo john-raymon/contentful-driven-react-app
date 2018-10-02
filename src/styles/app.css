@@ -2747,6 +2747,8 @@ a:hover {
 
 .Nav {
   background: linear-gradient(to bottom, #000000d9, rgba(0, 0, 0, 0)); }
+  .Nav .Logo__container {
+    width: 4rem; }
 
 .PhotoGrid__item {
   width: 50%; }

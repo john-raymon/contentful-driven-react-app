@@ -1,3 +1,9 @@
 .Nav {
   background: linear-gradient(     to bottom,     #000000d9,     rgba(0, 0, 0, 0)   );
+
+  .Logo {
+    &__container {
+      width: spacing(16);
+    }
+  }
 }
