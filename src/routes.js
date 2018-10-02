@@ -40,6 +40,7 @@ const Routes = ({ location }) => (
       component={AnnouncementContainer} 
     />
     <Route path="/announcements" component={GenericPageContainer} />
+    <Route path="/global" render={() => <p>Coming Soon</p>} />
     <Route path="/not-found" render={() => <p className="text-white">Page not found </p>} />
   </Switch>
 )
