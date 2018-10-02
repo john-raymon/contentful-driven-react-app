@@ -15,35 +15,35 @@ const Nav = () => (
         <ul class="list-reset flex flex-row overflow-scroll">
           <li class="pl2 py2 flex-grow flex flex-column">
             <a class="right" href="/announcements">
-              <p class="inline-block echomotors bold text-white right">
+              <p class="inline-block echomotors bold text-white right text-xxs">
               Announcements
               </p>
             </a>     
           </li>
           <li class="pl2 py2 flex-grow flex flex-column"> 
             <a class="right" href="/info">
-              <p class="inline-block echomotors bold text-white right">
+              <p class="inline-block echomotors bold text-white right text-xxs">
                 Info
               </p>
             </a>      
           </li>
           <li class="pl2 py2 flex-grow flex flex-column">
             <a class="right" href="/visual">
-              <p class="inline-block echomotors bold text-white right">
+              <p class="inline-block echomotors bold text-white right text-xxs">
                 Visual
               </p>
             </a>      
           </li>
           <li class="pl2 py2 flex-grow flex flex-column"> 
             <a class="right" href="/global">
-              <p class="inline-block echomotors bold text-white right">
+              <p class="inline-block echomotors bold text-white right text-xxs">
                 Global
               </p>
             </a>      
           </li>
           <li class="pl2 py2 flex-grow flex flex-column"> 
             <a class="right" href="/store">
-              <p class="inline-block echomotors bold text-white right">
+              <p class="inline-block echomotors bold text-white right text-xxs">
                 Store
               </p>
             </a>      
