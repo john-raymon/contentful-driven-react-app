@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import Home from './components/Home'
+import ComingSoon from 'components/ComingSoon'
+
 import GenericPageContainer from 'containers/GenericPageContainer'
 import AnnouncementContainer from 'containers/AnnouncementContainer'
 import VisualDetailContainer from 'containers/VisualDetailContainer'
@@ -40,7 +42,9 @@ const Routes = ({ location }) => (
       component={AnnouncementContainer} 
     />
     <Route path="/announcements" component={GenericPageContainer} />
-    <Route path="/global" render={() => <p>Coming Soon</p>} />
+    <Route path="/global" component={ComingSoon} />
+    <Route path="/store" component={ComingSoon} />
+
     <Route path="/not-found" render={() => <p className="text-white">Page not found </p>} />
   </Switch>
 )

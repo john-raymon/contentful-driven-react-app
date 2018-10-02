@@ -14,7 +14,7 @@ import './styles/app.css';
 
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-
+import LandingPage from 'components/LandingPage'
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     const { applicationStatus } = this.props;
     if (applicationStatus !== FULFILLED) {
-      return ( <p>Loading</p> )
+      return ( <LandingPage /> )
     } else {
       console.log('from app',this.props)
       return(
