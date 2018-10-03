@@ -5,7 +5,7 @@ import InstagramIcon from './../../assets/svgs/InstagramIcon'
 import TumblrIcon from './../../assets/svgs/TumblrIcon'
 const Footer = (props) => (
   <div className="Footer bg-black flex flex-column justify-center w100">
-    <ul className="list-reset flex flex-column items-center mb4"> 
+    <ul className="list-reset flex flex-column items-center mb2"> 
       <li className="py1">
         <a href={`${props.globals.twitterLink}`}>
           <div className="SocialIcon__container">
