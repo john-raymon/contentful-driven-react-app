@@ -58,8 +58,8 @@ const BlockSwitch = props => {
         case 'Coming Soon Globe':
           return <ComingSoonNotFixed />;
         case 'Team Photos':
-          const memberPhotos = get(globals, 'memberPhotos', []);
-          return <TeamPhotos memberPhotos={memberPhotos} />
+          const teamPhotos = get(globals, 'memberPhotos', []);
+          return <TeamPhotos memberPhotos={teamPhotos} />;
         default:
           return null;
       }

@@ -9,8 +9,8 @@ export default class Clients extends Component {
     const logos = get(clients, 'fields.logos', [])
     console.log(logos)
     return(
-      <div>
-        <p className="echomotors text-sm text-white center py2">Creds</p>
+      <div className="py3">
+        <p className="echomotors text-sm text-white center pt1">Creds</p>
         <ul className="flex flex-row list-reset max-width-4 w100 mx-auto 
   flex-wrap justify-center">
         {

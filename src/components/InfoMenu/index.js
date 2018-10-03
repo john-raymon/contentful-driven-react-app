@@ -5,7 +5,7 @@ import arrow from 'assets/images/arrow.png'
 export class TeamPhotos extends Component {
   render() {
     return(
-      <div className="flex flex-column items-center max-width-4 mx-auto center pt3">
+      <div className="flex flex-column items-center max-width-4 mx-auto center pt1">
         <div className="max-width-1 justify-center" >
           <ul class="list-reset flex flex-row overflow-scroll">
         {
