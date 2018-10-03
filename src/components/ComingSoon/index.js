@@ -5,7 +5,7 @@ import globe from 'assets/images/globe.gif'
 export class ComingSoonNotFixed extends Component {
   render() {
     return(
-      <div className="bg-black z-overlay relative w100 mx-auto h100 flex flex-column justify-center center">
+      <div className="bg-black relative w100 mx-auto h100 flex flex-column justify-center center">
         <div>
           <img src={globe} width="55rem"/>
         </div>
