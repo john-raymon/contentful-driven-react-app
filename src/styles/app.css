@@ -1064,7 +1064,7 @@ Import global settings
 .border-charcoal {
   border-color: #363636; }
 
-.text-black, .MarkdownBlock__markdown a {
+.text-black {
   color: black; }
 
 .bg-black, body, html {
@@ -1605,7 +1605,7 @@ Markdown styling
 .border-charcoal {
   border-color: #363636; }
 
-.text-black, .MarkdownBlock__markdown a {
+.text-black {
   color: black; }
 
 .bg-black, body, html {
@@ -2188,7 +2188,7 @@ strong,
 .border-charcoal {
   border-color: #363636; }
 
-.text-black, .MarkdownBlock__markdown a {
+.text-black {
   color: black; }
 
 .bg-black, body, html {

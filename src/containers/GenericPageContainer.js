@@ -29,7 +29,6 @@ const mapStateToProps = state => {
     pushOffFromMenu: get(state, 'genericPage.items[0].fields.pushOffFromMenu', true),
     blocks: get(state, 'genericPage.items[0].fields.contentBlocks', []),
     globals: globals(state)
-
   };
 };
 

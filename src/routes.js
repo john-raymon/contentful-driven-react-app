@@ -12,7 +12,7 @@ const Routes = ({ location }) => (
   <Switch location={location}>
     <Route exact path="/" component={LandingPage} />
     <Route exact path="/home" component={GenericPageContainer} />
-
+    
     <Route exact path="/visual/video" component={GenericPageContainer} />
     <Route exact path="/visual/video/music-videos" component={GenericPageContainer} />
     <Route exact path="/visual/video/recap" component={GenericPageContainer} />

@@ -10,7 +10,7 @@ export default class Clients extends Component {
     console.log(logos)
     return(
       <div>
-        <p className="echomotors text-sm text-white center py2">Clients</p>
+        <p className="echomotors text-sm text-white center py2">Creds</p>
         <ul className="flex flex-row list-reset max-width-4 w100 mx-auto 
   flex-wrap justify-center">
         {

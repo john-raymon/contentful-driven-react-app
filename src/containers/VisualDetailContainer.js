@@ -14,7 +14,7 @@ class VisualDetailContainer extends ContainerBase {
 
 const mapStateToProps = (state, props) => {
   return {
-    visual: getVisual(state, props)
+    visual: getVisual(state, props),
   };
 };
 

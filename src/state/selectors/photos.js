@@ -11,11 +11,13 @@ export default createSelector(
       const title = get(photo, 'fields.title', '');
       const description = get(photo, 'fields.description', '');
       const photoFile = get(photo, 'fields.photoFile', {});
+      const contentBlocks = get(photo, 'fields.contentBlocks', []);
       flattenedContents[slug] = {
         slug,
         title,
         description,
-        photoFile
+        photoFile,
+        contentBlocks
       }
       return flattenedContents;
     }, {})
