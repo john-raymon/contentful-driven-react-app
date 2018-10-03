@@ -35,7 +35,7 @@ export default class InfoMenu extends Component {
     return(
       <div className="flex flex-column items-center max-width-4 mx-auto center pt3">
         <a href="mailto:info@vvvisualvandals.com">
-          <p className="echomotors bold text-sm text-white center py3">
+          <p className="echomotors bold text-sm text-white center py2">
             Contact
             <span className="block echomotors text-xxs">
               info@vvvisualvandals.com

@@ -52,9 +52,8 @@ const BlockSwitch = props => {
           return <PhotoMenu />
         case 'Design Menu':
           return <DesignMenu />
-        case 'Info Menu':
-          const memberPhotos = get(globals, 'memberPhotos', []);
-          return <InfoMenu memberPhotos={memberPhotos} />
+        case 'Contact Link':
+          return <InfoMenu />
         case 'Coming Soon Globe':
           return <ComingSoonNotFixed />;
         case 'Team Photos':
