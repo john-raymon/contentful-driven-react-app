@@ -11,7 +11,7 @@ export default createSelector(
       const title = get(design, 'fields.title', '');
       const description = get(design, 'fields.description', '');
       const photoFile = get(design, 'fields.photoFile', {});
-      const contentBlocks = get(photo, 'fields.contentBlocks', []);
+      const contentBlocks = get(design, 'fields.contentBlocks', []);
       flattenedContents[slug] = {
         slug,
         title,
