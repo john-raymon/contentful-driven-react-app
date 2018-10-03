@@ -21,6 +21,11 @@ export default class DesignMenu extends Component {
             <p class="echomotors text-sm text-white"> Commerical </p>
           </Link>
         </li>
+        <li>
+          <Link to="design/commercial">
+            <p class="echomotors text-sm text-white"> Digital </p>
+          </Link>
+        </li>
       </ul>
     )
   }
