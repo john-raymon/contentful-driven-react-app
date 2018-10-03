@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 
 import { fetchGenericPage } from 'state/actions/genericPageActions';
 
+import globals from 'state/selectors/globals'
+
 import { IDLE } from 'constants/Status';
 import get from 'util/get';
 
@@ -26,6 +28,8 @@ const mapStateToProps = state => {
   return {
     pushOffFromMenu: get(state, 'genericPage.items[0].fields.pushOffFromMenu', true),
     blocks: get(state, 'genericPage.items[0].fields.contentBlocks', []),
+    globals: globals(state)
+
   };
 };
 

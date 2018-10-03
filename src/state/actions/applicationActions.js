@@ -17,6 +17,7 @@ export const initializeApplication = () => dispatch => {
       Data.setRef('contentful', Contentful);
 
       const fetchData = Promise.all([
+        dispatch(fetchGlobalSettings()),
         dispatch(fetchContentfulAnnouncements()),
         dispatch(fetchContentfulPhotos()),
         dispatch(fetchContentfulDesigns()),
@@ -32,5 +33,14 @@ export const initializeApplication = () => dispatch => {
         .then(([globals]) => resolve())
         .catch(err => reject(err));
     })
+  });
+};
+
+
+export const FETCH_GLOBAL_SETTINGS = 'FETCH_GLOBAL_SETTINGS';
+export const fetchGlobalSettings = () => dispatch => {
+  return dispatch({
+    type: FETCH_GLOBAL_SETTINGS,
+    payload: Data.getEntries({ content_type: 'globals' })
   });
 };

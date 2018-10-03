@@ -7,6 +7,8 @@ import Routes from './routes'
 
 import { initializeApplication } from './state/actions/applicationActions';
 
+import globals from 'state/selectors/globals'
+
 import get from 'util/get'
 import { IDLE, FULFILLED } from './constants/Status'
 
@@ -32,7 +34,7 @@ class App extends Component {
   }  
 
   render() {
-    const { applicationStatus } = this.props;
+    const { applicationStatus, globals } = this.props;
     if (applicationStatus !== FULFILLED) {
       return ( <LandingPage /> )
     } else {
@@ -43,7 +45,7 @@ class App extends Component {
           <main className="flex flex-column container">
             <Routes location={get(this, 'props.location')} /> 
           </main>
-          <Footer/>
+          <Footer globals={globals}/>
         </Fragment>
       )
     }
@@ -54,6 +56,7 @@ const mapStateToProps = state => {
   return {
     ...state,
     applicationStatus: get(state, 'status.initializeApplication'),
+    globals: globals(state)
   };
 };
 

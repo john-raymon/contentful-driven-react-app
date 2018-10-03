@@ -24,6 +24,7 @@ const BlockSwitch = props => {
   const { block } = props;
   const type = get(block, 'sys.contentType.sys.id');
   const blockFields = get(block, 'fields', {});
+  const globals = get(props, 'globals', {});
 
   switch (type) {
     case 'blockAnnouncementHero':
@@ -51,7 +52,8 @@ const BlockSwitch = props => {
         case 'Design Menu':
           return <DesignMenu />
         case 'Info Menu':
-          return <InfoMenu />
+          const memberPhotos = get(globals, 'memberPhotos', []);
+          return <InfoMenu memberPhotos={memberPhotos} />
         default:
           return null;
       }

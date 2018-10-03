@@ -18,6 +18,28 @@ export default class InfoMenu extends Component {
           </p>
         </Link>
         <img src={arrow} className="py1" style={{width: "10px"}} />
+
+        <div className="max-width-1 justify-center" >
+          <ul class="list-reset flex flex-row overflow-scroll">
+        {
+          this.props.memberPhotos.map((photo, i) => {
+            return (
+              <li class=" flex-grow flex flex-column mx1">
+                <div style={{
+                  height: "5rem",
+                  width: "5rem",
+                  backgroundImage: `url(${photo.fields.file.url})`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}>
+                  
+                </div>
+              </li>
+            )
+          })
+        }
+        </ul>
+        </div>
         <a href="mailto:info@vvvisualvandals.com">
           <p className="echomotors bold text-sm text-white center">
             Contact

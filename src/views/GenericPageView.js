@@ -5,7 +5,7 @@ import BlockSwitch from './../components/BlockSwitch';
 
 class GenericPageView extends Component {
   render() {
-    const { blocks, actions, pushOffFromMenu } = this.props;
+    const { blocks, actions, pushOffFromMenu, globals } = this.props;
     return (
       <div className={`GenericPageView flex flex-column flex-grow justify-center${pushOffFromMenu ? ' pushFromNav' : '' }`}>
         <div>
@@ -15,6 +15,7 @@ class GenericPageView extends Component {
                 key={`${i}-${get(block, 'sys.id', i)}`}
                 block={block}
                 actions={actions}
+                globals={globals}
               />
             ))}
         </div>
