@@ -13,7 +13,7 @@ class MarkdownTransparent extends Component {
       <div className="MarkdownBlock bg-black px3 py2">
           <div
             dangerouslySetInnerHTML={{ __html: marked(markdown) }}
-            className="MarkdownBlock__markdown worksans text-white max-width-3 mx-auto"
+            className="MarkdownBlock__markdown worksans text-white max-width-3 mx-auto center"
           />
       </div>
     );
