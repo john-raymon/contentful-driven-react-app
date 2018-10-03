@@ -30,6 +30,7 @@ const Routes = ({ location }) => (
     <Route exact path="/visual/design/brands" component={GenericPageContainer} />
     <Route exact path="/visual/design/commercial" component={GenericPageContainer} />
     <Route exact path="/visual/design/digital" component={GenericPageContainer} />
+    <Route exact path="/visual/design/flyer" component={GenericPageContainer} />
 
     <Route exact path="/visual/:visualType/:visualHandle" component={VisualDetailContainer} />
     <Route path="/visual" component={GenericPageContainer} />

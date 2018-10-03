@@ -22,8 +22,13 @@ export default class DesignMenu extends Component {
           </Link>
         </li>
         <li>
-          <Link to="design/commercial">
+          <Link to="design/digital">
             <p class="echomotors text-sm text-white"> Digital </p>
+          </Link>
+        </li>
+        <li>
+          <Link to="design/flyer">
+            <p class="echomotors text-sm text-white"> Flyer </p>
           </Link>
         </li>
       </ul>
