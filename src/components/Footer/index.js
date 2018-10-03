@@ -19,14 +19,7 @@ const Footer = (props) => (
             <InstagramIcon />
           </div>
         </a>
-      </li>
-      <li className="py1">
-        <a href={`${props.globals.tumblrLink}`}>
-          <div className="SocialIcon__container">
-            <TumblrIcon />
-          </div>
-        </a>
-      </li>    
+      </li>   
     </ul>
     <p className="worksans text-white center text-xxs">
       Copyright &copy; 2018 VVVISUAL VANDALS 
