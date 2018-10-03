@@ -37,12 +37,7 @@ export default class MobileMenu extends Component {
           <p className="echomotors bold text-sm text-white center" onClick={() => this.props.toggle()}>
             Global
           </p>
-        </Link>   
-        <Link to="/store">
-          <p className="echomotors bold text-sm text-white center" onClick={() => this.props.toggle()}>
-            Store
-          </p>
-        </Link>      
+        </Link>        
       </div>
 
       </div>
