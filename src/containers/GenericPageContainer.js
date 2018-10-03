@@ -17,11 +17,13 @@ class GenericPageContainer extends ContainerBase {
       actions,
       match: { path }
     } = this.props;
-
+    window.scrollTo(0, 0)
+  
     const slug = path === '/' ? 'home' : path.replace(/^\//, '');
     console.log('this is the slug', slug)
     return actions.fetchGenericPage(slug);
   };
+
 }
 
 const mapStateToProps = state => {

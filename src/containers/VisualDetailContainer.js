@@ -9,7 +9,10 @@ import getVisual from 'state/selectors/getVisual';
 class VisualDetailContainer extends ContainerBase {
   view = import('views/VisualDetailView');
 
-  model = () => {};
+  model = () => {
+    window.scrollTo(0, 30)
+  };
+
 }
 
 const mapStateToProps = (state, props) => {
