@@ -16,7 +16,7 @@ export default class Clients extends Component {
         {
           logos.map((logo, i) => {
             return (
-            <li className="left flex flex-column justify-center px2 py1" style={{width: "15rem"}}>
+            <li className="left flex flex-column justify-center px2 py1" key={i} style={{width: "15rem"}}>
               <div className="w100 mx-auto">
                 <img className="w100 mx-auto" src={logo.fields.file.url}/> 
               </div>

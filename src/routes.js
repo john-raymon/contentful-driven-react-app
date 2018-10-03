@@ -9,7 +9,7 @@ import AnnouncementContainer from 'containers/AnnouncementContainer'
 import VisualDetailContainer from 'containers/VisualDetailContainer'
 
 const Routes = ({ location }) => (
-  <Switch location={location}>
+  <Switch location={location} >
     <Route exact path="/" component={LandingPage} />
     <Route exact path="/home" component={GenericPageContainer} />
     

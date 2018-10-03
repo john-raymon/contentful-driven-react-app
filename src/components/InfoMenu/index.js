@@ -11,7 +11,7 @@ export class TeamPhotos extends Component {
         {
           this.props.memberPhotos.map((photo, i) => {
             return (
-              <li class=" flex-grow flex flex-column mx1">
+              <li key={i} className="flex-grow flex flex-column mx1">
                 <div style={{
                   height: "5rem",
                   width: "5rem",
