@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import arrow from 'assets/images/arrow.png'
 
-export default class InfoMenu extends Component {
+export class TeamPhotos extends Component {
   render() {
     return(
       <div className="flex flex-column items-center max-width-4 mx-auto center pt3">
@@ -19,7 +19,6 @@ export default class InfoMenu extends Component {
                   backgroundPosition: 'center',
                   backgroundSize: 'cover'
                 }}>
-                  
                 </div>
               </li>
             )
@@ -27,12 +26,24 @@ export default class InfoMenu extends Component {
         }
         </ul>
         </div>
+      </div>
+    )
+  }
+}
+export default class InfoMenu extends Component {
+  render() {
+    return(
+      <div className="flex flex-column items-center max-width-4 mx-auto center pt3">
         <a href="mailto:info@vvvisualvandals.com">
-          <p className="echomotors bold text-sm text-white center">
+          <p className="echomotors bold text-sm text-white center py3">
             Contact
+            <span className="block echomotors text-xxs">
+              info@vvvisualvandals.com
+            </span>
           </p>
         </a>
       </div>
     )
   }
 }
+
