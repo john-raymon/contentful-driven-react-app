@@ -19,6 +19,7 @@ import PhotoGrid from 'components/PhotoGrid'
 import DesignGrid from 'components/DesignGrid'
 import InfoMenu from 'components/InfoMenu'
 import Clients from 'components/Clients'
+import { ComingSoonNotFixed } from 'components/ComingSoon'
 
 const BlockSwitch = props => {
   const { block } = props;
@@ -54,6 +55,8 @@ const BlockSwitch = props => {
         case 'Info Menu':
           const memberPhotos = get(globals, 'memberPhotos', []);
           return <InfoMenu memberPhotos={memberPhotos} />
+        case 'Coming Soon Globe':
+          return <ComingSoonNotFixed />;
         default:
           return null;
       }
