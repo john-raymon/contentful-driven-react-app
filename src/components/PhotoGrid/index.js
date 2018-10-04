@@ -31,7 +31,7 @@ class PhotoGrid extends Component {
       });
         return (
           <div className="max-width-4 mx-auto">
-            <p className="echomotors text-sm text-white bold px3 py1 w100 mx-auto">
+            <p className="echomotors text-sm text-white bold py1 w100 mx-auto">
               { title }
             </p>
             <Masonry
