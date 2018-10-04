@@ -11,9 +11,9 @@ export default class PhotoGridItem extends Component {
     const slug = get(photo, 'fields.slug', '');
     const src = get(photo, 'fields.photoFile.fields.file.url', '')
     return(
-      <div className="PhotoGrid__item left" style={{maxHeight: '200px'}}>
+      <div className="PhotoGrid__item left">
           <Link to={`/visual/photo/${slug}`}>
-            <img src={src} className="w100"/>
+            <img src={src} className="w100" height="auto"/>
           </Link>
       </div>
     )
