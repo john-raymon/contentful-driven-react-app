@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import get from 'util/get'
 
 export default class DesignGridItem extends Component {
-  render() {  
+  render() {
     const design = get(this.props, 'design', {});
     const title = get(design, 'fields.title', '');
     const description = get(design, 'fields.description', '');
@@ -13,10 +13,9 @@ export default class DesignGridItem extends Component {
     return(
       <div className="DesignGrid__item left">
           <Link to={`/visual/design/${slug}`}>
-            <img src={src} className="w100" height="auto"/>
+            <img src={`${src}?w=150`} className="w100" height="auto"/>
           </Link>
       </div>
     )
   }
 }
-
