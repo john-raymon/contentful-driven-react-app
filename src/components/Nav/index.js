@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import HamburgerIcon from './../../assets/svgs/HamburgerIcon'
 import Animate from 'react-move/Animate'
 import { easeExpOut } from 'd3-ease';
@@ -22,23 +22,20 @@ export default class Nav extends Component {
     });
   }
 
-  render() { 
+  render() {
     return (
       <nav className="Nav fixed w100 pt2 pb2 px3 z-nav">
         <div className="w100 flex flex-row items-center justify-between border-bottom border-medium border-white px1 mx-auto max-width-3">
           <div className="text-decoration-none">
             <Link to="/home">
               <div className="Logo__container">
-                <img src={logo} className="w100" />  
+                <img src={logo} className="w100" />
               </div>
             </Link>
           </div>
-          <div className="HamburgerIcon__container fill-white" onClick={this.toggleMenu}> 
+          <div className="HamburgerIcon__container fill-white pointer" onClick={this.toggleMenu}> 
             <HamburgerIcon />
           </div>
-
-
-
 
           <Animate
             start={() => ({
@@ -69,35 +66,35 @@ export default class Nav extends Component {
                   <p class="inline-block echomotors bold text-white right text-xxs">
                   Announcements
                   </p>
-                </a>     
+                </a>
               </li>
-              <li class="pl2 py2 flex-grow flex flex-column"> 
+              <li class="pl2 py2 flex-grow flex flex-column">
                 <a class="right" href="/info">
                   <p class="inline-block echomotors bold text-white right text-xxs">
                     Info
                   </p>
-                </a>      
+                </a>
               </li>
               <li class="pl2 py2 flex-grow flex flex-column">
                 <a class="right" href="/visual">
                   <p class="inline-block echomotors bold text-white right text-xxs">
                     Visual
                   </p>
-                </a>      
+                </a>
               </li>
-              <li class="pl2 py2 flex-grow flex flex-column"> 
+              <li class="pl2 py2 flex-grow flex flex-column">
                 <a class="right" href="/global">
                   <p class="inline-block echomotors bold text-white right text-xxs">
                     Global
                   </p>
-                </a>      
+                </a>
               </li>
-              <li class="pl2 py2 flex-grow flex flex-column"> 
+              <li class="pl2 py2 flex-grow flex flex-column">
                 <a class="right" href="/store">
                   <p class="inline-block echomotors bold text-white right text-xxs">
                     Store
                   </p>
-                </a>      
+                </a>
               </li>
             </ul>
           </div>
@@ -108,6 +105,6 @@ export default class Nav extends Component {
 }
 
 
-// <div className="HamburgerIcon__container fill-white"> 
+// <div className="HamburgerIcon__container fill-white">
 //         <HamburgerIcon />
 //         </div>
